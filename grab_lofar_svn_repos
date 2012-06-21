@@ -10,7 +10,7 @@
 
 echo "*** Checking out LOFAR ***"
 mkdir -p $LOFAR_SVNROOT 
-git svn clone -r20400 https://staley@svn.astron.nl/LOFAR/trunk $LOFAR_SVNROOT 
+git svn clone -r20400 https://armstrong@svn.astron.nl/LOFAR/trunk $LOFAR_SVNROOT 
 cd $LOFAR_SVNROOT
 git svn fetch #For some reason, (https?) extra step required here.
 check_result "lofar repo" "get" $?
